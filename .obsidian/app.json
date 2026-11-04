@@ -1,0 +1,12 @@
+{
+  "vimMode": true,
+  "readableLineLength": false,
+  "showLineNumber": true,
+  "spellcheck": true,
+  "promptDelete": false,
+  "newFileLocation": "root",
+  "attachmentFolderPath": "__support",
+  "propertiesInDocument": "visible",
+  "autoConvertHtml": true,
+  "alwaysUpdateLinks": true
+}

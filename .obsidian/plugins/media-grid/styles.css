@@ -1,0 +1,20 @@
+.media-grid-container .callout-content {
+  padding-left: 16px;
+}
+.media-grid-container.flex {
+  display: flex;
+  flex-direction: column;
+}
+.media-grid-container.flex .media-grid-row {
+  display: flex;
+}
+.media-grid-container.flex .media-grid-row .media-grid-cell {
+  flex: 1;
+}
+.media-grid-container.flex .media-grid-row .media-grid-cell img,
+.media-grid-container.flex .media-grid-row .media-grid-cell video {
+  width: 100%;
+}
+.media-grid-container.grid {
+  display: grid;
+}

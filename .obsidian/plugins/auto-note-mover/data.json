@@ -1,0 +1,38 @@
+{
+  "trigger_auto_manual": "Automatic",
+  "use_regex_to_check_for_tags": false,
+  "statusBar_trigger_indicator": true,
+  "folder_tag_pattern": [
+    {
+      "folder": "__Subjects/Math",
+      "tag": "#math",
+      "pattern": ""
+    },
+    {
+      "folder": "__Subjects/Chemistry",
+      "tag": "#chem",
+      "pattern": ""
+    },
+    {
+      "folder": "__Subjects/Biology",
+      "tag": "#bi",
+      "pattern": ""
+    },
+    {
+      "folder": "__Subjects/Physics",
+      "tag": "#phy",
+      "pattern": ""
+    },
+    {
+      "folder": "__Subjects/programming",
+      "tag": "#programming",
+      "pattern": ""
+    }
+  ],
+  "use_regex_to_check_for_excluded_folder": false,
+  "excluded_folder": [
+    {
+      "folder": "__Main"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{fourier}
+\usepackage{chemfig}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools} 
+
+\usepackage[paperheight=15in, margin=1in, heightrounded]{geometry} 
+\usepackage[skip=0.8em, indent=0pt]{parskip}
+\usepackage{setspace}
+\setstretch{1.15} 
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc, positioning, shapes.geometric}
+\usepackage{pgfplots} 
+\pgfplotsset{compat=1.18}
+
+\usepackage{float} % <--- FIXED: Added this to resolve the [H] error
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% --- References & Links ---
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=purple,  
+    citecolor=blue,
+    urlcolor=teal
+}
+
+
+
+
+\title{Glycolysis}
+\author{Sarv Patel}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{figure}[htbp]
+    \schemestart
+    \chemname{\chemfig{[:-150]*6(-(-[2]CH_2OH)
+        -(-[-2]OH)
+        -(-[2]OH)
+        -(-[-2]OH)
+        -(-[2]OH)
+        -)}}{Glucose}
+    \arrow{-U>[ATP][ADP][5pt]}[,2]
+    \chemname{\chemfig{[:-150]*6(-(-[2]CH_2OP\textcolor{red}{P})
+        -(-[-2]OH)
+        -(-[2]OH)
+
+        -(-[-2]OH)
+        -(-[2]OH)
+        -)}}{Glucose-6-Phosphate}
+        \arrow{<->}[,2]
+    \setchemfig{atom sep=4em}
+    \chemname{\chemfig{[:-126]*5(O-(-[2]CH_2O\textcolor{red}{P})
+        -(-[-2]OH)
+        -(-[2,0.5]OH)
+        -(-[-2]OH)(-[2](CH_2OH))
+        -)}}{Fructose-6-Phosphate}
+    \arrow{-U>[ATP][ADP]}[-80,1.5]
+    \setchemfig{atom sep=4em}
+    \schemestop
+\end{figure}
+
+\begin{figure}[htbp]
+    \schemestart
+        \chemname[-2.2cm]{\chemfig{\llap{H}C(-[2]C(-[3]O)(-[1]O\color{red}{P}))(-[-2]H_2CO\color{red}{P})-OH}}{BGP/PGAP}
+        \arrow{<-}[,1.5]
+        \chemname[-2.2cm]{\chemfig{\llap{H}C(-[2]C(-[3]O)(-[1]@{hydrogen}H))(-[-2]CH_2O\color{red}{P})
+        -OH}}{BGP/PGAP}
+        \arrow{<=>}[,1.2]
+        \chemname[-1.8cm]{\chemfig{O(=C(-[2]CH_2O\color{red}{P})(-[-2]CH_2OH))}}{DHAP}
+        \arrow{<=>[\chemfig{@{atoo2}\vphantom{X}}]}[,1.2]
+        \chemname{\chemfig{[:-126]*5(O-(-[2]CH_2O\textcolor{red}{P})
+            -(-[-2]OH)
+            -(-[2,0.5]OH)
+            -(-[-2]OH)(-[2](CH_2O\color{red}{P}))
+            -)}}{Fructose-6-Phosphate}
+    \schemestop
+    \chemmove{
+      \draw[shorten >= 8pt,dashed,red](atoo2) .. controls +(90:4cm) and +(30:1cm)..(hydrogen);
+    }
+\end{figure}
+
+\end{document}

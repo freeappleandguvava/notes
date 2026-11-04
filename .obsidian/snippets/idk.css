@@ -1,0 +1,65 @@
+/* Bold */
+.cm-strong,
+strong {
+  color: #ff6b6b !important;
+}
+
+/* Italic */
+.cm-em,
+em {
+  color: #4dabf7 !important;
+}
+
+/* Strikethrough */
+.cm-strikethrough,
+s {
+  color: #51cf66 !important;
+}
+
+pre code {
+  font-size: 22px;
+}
+
+.cm-content {
+  font-size: 18px;
+}
+
+.HyperMD-codeblock {
+  font-size: 30px;
+}
+
+.cm-gutterElement {
+  font-size: 20px !important;
+}
+
+body {
+  --nav-item-size: 18px;
+}
+
+.MathJax {
+  font-size: 1.2em; /* Adjust percentage or em as needed */
+}
+
+.math {
+  font-size: 1.2em;
+}
+
+.markdown-rendered .block-language-tikz svg {
+    zoom: 2;
+}
+
+/* /* Center all images and internal file/note embeds */ */
+/* img, */
+/* .markdown-source-view .cm-content .image-embed, */
+/* .markdown-preview-view .internal-embed { */
+/*   display: block !important; */
+/*   margin-inline: auto !important; */
+/*   text-align: center; */
+/* } */
+/**/
+/* /* Center external web embeds and iframes (e.g., YouTube) */ */
+/* iframe, */
+/* .video-embed { */
+/*   display: block !important; */
+/*   margin-inline: auto !important; */
+/* } */

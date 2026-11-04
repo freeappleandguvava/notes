@@ -1,0 +1,91 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{chemfig}
+\usepackage[T1]{fontenc} % Ensures proper font encoding for copy-paste/accents
+\usepackage{microtype}    % Improves justification and reduces hyphenation
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage[letterpaper, margin=0.8in, heightrounded]{geometry}
+\usepackage[skip=0.8em, indent=0pt]{parskip} % Modern way to handle paragraph spacing
+\usepackage{setspace}
+\setstretch{0.8} % Safer than \renewcommand{\baselinestretch}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{booktabs} % Essential for clean, professional-looking tables
+\graphicspath{{images/}}
+\usepackage{xcolor}
+\usetikzlibrary{arrows.meta, matrix} % <-- Add 'matrix' here!
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    citecolor=green,
+    pdftitle={My LaTeX Document},
+    pdfpagemode=FullScreen,
+}
+
+
+\title{VESPR SHAPES ASSIGNMENT}
+\author{Sarv Patel}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{\normalsize Lewis \& Line Diagram}
+
+\begin{figure}[htbp]
+  \centering
+  \chemfig[bond style={line width=0.8pt}, atom sep=2.3em]{**6(-(-N^{\oplus}(-[-3]\charge{180=:,270=..,0=:}{O}^{\text{ }\ominus})(=[-1]\charge{180=:,0=:}{O}))
+  -
+  -(-N^{\oplus}(-[-1]\charge{180=:,270=..,0=:}{O}^{\text{ }\ominus})(=[2]\charge{180=:,0=:}{O}))
+  -(-CH_3)
+  -(-N^{\oplus}(-[-3]\charge{180=:,270=..,0=:}{O}^{\text{ }\ominus})(=[2]\charge{180=:,0=:}{O}))
+  -)}
+  \quad
+  \chemfig[bond style={line width=0.8pt}, atom sep=2.3em]{**6(-(-N^{\oplus}(-[-3]\charge{180=:,270=..,0=:}{O}^{\text{ }\ominus})(=[-1]\charge{180=:,0=:}{O}))
+  -
+  -(-N^{\oplus}(-[2]\charge{180=:,270=..,0=:}{O}^{\text{ }\ominus})(=[-1]\charge{180=:,0=:}{O}))
+  -(-CH_3)
+  -(-N^{\oplus}(-[-3]\charge{180=:,270=..,0=:}{O}^{\text{ }\ominus})(=[2]\charge{180=:,0=:}{O}))
+  -)}
+  \quad
+  \chemfig[bond style={line width=0.8pt}, atom sep=2.3em]{**6(-(-N^{\oplus}(-[-1]\charge{180=:,270=..,0=:}{O}^{\text{ }\ominus})(=[-3]\charge{180=:,0=:}{O}))
+  -
+  -(-N^{\oplus}(-[2]\charge{180=:,270=..,0=:}{O}^{\text{ }\ominus})(=[-1]\charge{180=:,0=:}{O}))
+  -(-CH_3)
+  -(-N^{\oplus}(-[-3]\charge{180=:,270=..,0=:}{O}^{\text{ }\ominus})(=[2]\charge{180=:,0=:}{O}))
+  -)}
+  \caption{Trinitrotoluene (TNT) Structures}
+  \label{fig:TNT}
+\end{figure}
+
+
+\section*{\small Physical Properties of TNT}
+
+
+\section*{\small Structure \& Intermolecular Forces}
+
+\section*{\small Comparision to a Similar Compound}
+
+\begin{figure}[htbp]
+  \centering
+  \setchemfig{atom sep=2.5em}
+  
+    \label{fig:RDX_lewis}
+    \chemfig[bond style={line width=0.8pt}]{*6(-N(-[-2]N(=[-1]O)(=[-3]O))--N(-N(=[-1]O)(=[2]O))--N(-N(=[2]O)(=[-3]O))-)}
+    \quad
+    \chemfig[bond style={line width=1pt}]{*6(C?(-H)=C(-[:-90]N(=[:210]O)(-[:-30]O))-C(-[:-30]H)=C(-[:30]N(=[:90]O)(-[:-30]O))-C(-[:90]C(<:H)(<[:30]H)(-[:150]H))=C?(-[:150]N(=[:90]O)(-[:210]O)))}
+
+  \caption{RDX Vs. TNT}
+  \label{fig:RDX}
+\end{figure}
+
+\begin{figure}[htbp]
+  \centering
+\end{figure}
+
+\subsection*{\small Explanation of Difference: }
+
+\end{document}

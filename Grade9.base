@@ -1,0 +1,22 @@
+views:
+  - type: cards
+    name: View
+    filters:
+      and:
+        - Grade.containsAny("9")
+        - Topic.isEmpty()
+        - "!Chapter.isEmpty()"
+    groupBy:
+      property: Subject
+      direction: ASC
+    order:
+      - file.name
+      - aliases
+      - file.links
+    sort:
+      - property: Subject
+        direction: ASC
+      - property: Chapter
+        direction: ASC
+    cardSize: 330
+    imageAspectRatio: 1.25

@@ -1,0 +1,67 @@
+\documentclass[twocolumn,12pt]{book}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage{fourier}
+
+\usepackage{amsmath, amssymb, amsthm}
+\usepackage{mathtools,indentfirst}
+
+\usepackage[letterpaper, margin=1in, heightrounded]{geometry}
+\usepackage[skip=0.8em, indent=0pt]{parskip}
+\usepackage{setspace}
+\setstretch{1.15}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows.meta, calc, positioning, shapes.geometric}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
+
+\usepackage{float} % <--- FIXED: Added this to resolve the [H] error
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Remark}
+
+% --- References & Links ---
+\usepackage{xcolor}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=purple,
+    citecolor=blue,
+    urlcolor=teal
+}
+
+
+
+
+\title{Cengage Advanced Algebra Notes}
+\author{Sarv Patel}
+\date{\today}
+
+\begin{document}
+
+\chapter{Set Theory and real Number System}
+\section{SETS}
+\textbf{Set}: a collection of objects of any kind of your intuition or thought which are distinct and distinguishable
+
+\indent By the word 'distinct' we mean that no object is repeated and by the word distinguishable, we mean that the object of the collection must be known i.e., given any object we must be able to decide wheter that object belons to the colelction or not.
+
+\begin{tikzpicture}
+  \draw[<->] (0,-3) -- (0,3);
+  \draw[<->] (-3,0) -- (3,0);
+  \draw[red] (0,0) circle (2);
+  \draw[-] (0,0) -- (2,3);
+\end{tikzpicture}
+
+\end{document}
